@@ -231,65 +231,68 @@ int main()
     cout << "Enter the number for the corresponding operation: ";
     cin >> case_number;
 
-    switch (case_number) {
-        case 1:
-            solveLinearEquationInTwoVariables();
-            break;
-        case 2:
-            solveLinearEquationInThreeVariables();
-            break;
-        case 3:
-            findEigenValueAndEigenVector();
-            break;
-        case 4: {
-            double a, b, c, d;
+    switch (case_number)
+    {
+    case 1:
+        solveLinearEquationInTwoVariables();
+        break;
+    case 2:
+        solveLinearEquationInThreeVariables();
+        break;
+    case 3:
+        findEigenValueAndEigenVector();
+        break;
+    case 4:
+    {
+        double a, b, c, d;
 
-            cout << "Enter the elements of the 2x2 matrix:" << endl;
-            cout << "Enter a: ";
-            cin >> a;
-            cout << "Enter b: ";
-            cin >> b;
-            cout << "Enter c: ";
-            cin >> c;
-            cout << "Enter d: ";
-            cin >> d;
+        cout << "Enter the elements of the 2x2 matrix:" << endl;
+        cout << "Enter a: ";
+        cin >> a;
+        cout << "Enter b: ";
+        cin >> b;
+        cout << "Enter c: ";
+        cin >> c;
+        cout << "Enter d: ";
+        cin >> d;
 
-            double result = determinant2x2(a, b, c, d);
+        double result = determinant2x2(a, b, c, d);
 
-            cout << "Determinant of the 2x2 matrix is: " << result << endl;
-            break;
-        }
-        case 5: {
-            double a1, b1, c1, d1, e1, f1, g1, h1, i1;
+        cout << "Determinant of the 2x2 matrix is: " << result << endl;
+        break;
+    }
+    case 5:
+    {
+        double a1, b1, c1, d1, e1, f1, g1, h1, i1;
 
-            cout << "Enter the elements of the 3x3 matrix:" << endl;
-            cout << "Enter a: ";
-            cin >> a1;
-            cout << "Enter b: ";
-            cin >> b1;
-            cout << "Enter c: ";
-            cin >> c1;
-            cout << "Enter d: ";
-            cin >> d1;
-            cout << "Enter e: ";
-            cin >> e1;
-            cout << "Enter f: ";
-            cin >> f1;
-            cout << "Enter g: ";
-            cin >> g1;
-            cout << "Enter h: ";
-            cin >> h1;
-            cout << "Enter i: ";
-            cin >> i1;
+        cout << "Enter the elements of the 3x3 matrix:" << endl;
+        cout << "Enter a: ";
+        cin >> a1;
+        cout << "Enter b: ";
+        cin >> b1;
+        cout << "Enter c: ";
+        cin >> c1;
+        cout << "Enter d: ";
+        cin >> d1;
+        cout << "Enter e: ";
+        cin >> e1;
+        cout << "Enter f: ";
+        cin >> f1;
+        cout << "Enter g: ";
+        cin >> g1;
+        cout << "Enter h: ";
+        cin >> h1;
+        cout << "Enter i: ";
+        cin >> i1;
 
-            double result1 = determinant3x3(a1, b1, c1, d1, e1, f1, g1, h1, i1);
+        double result1 = determinant3x3(a1, b1, c1, d1, e1, f1, g1, h1, i1);
 
-            cout << "Determinant of the 3x3 matrix is: " << result1 << endl;
-            break;
-        }
-        default:
-            cout << "Enter a valid case number for the operation" << endl;
-            break;
+        cout << "Determinant of the 3x3 matrix is: " << result1 << endl;
+        break;
+    }
+    default:
+        cout << "Enter a valid case number for the operation" << endl;
+        break;
     }
 
     return 0;
